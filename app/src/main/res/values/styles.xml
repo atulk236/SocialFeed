@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="os_semibold" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+    </style>
+
+    <style name="os_regular" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="os_bold" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="georgia_bold" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/georgia_grassetto</item>
+    </style>
+
+    <style name="avenir_heavy" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/avenir_heavy</item>
+    </style>
+
+    <style name="avenir_book" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/avenir_book</item>
+    </style>
+
+    <style name="avenir_black" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/avenir_black</item>
+    </style>
+
+    <style name="avenir_light" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/avenir_light</item>
+    </style>
+
+</resources>

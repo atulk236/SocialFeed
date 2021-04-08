@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_mlarge">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/photo_female_3"
+                    app:civ_border="true"
+                    app:civ_border_width="3dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="0" />
+
+                <TextView
+                    android:id="@+id/pusername_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="My Profile"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/plocation_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="India"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/LightGrey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/spacing_mlarge"
+                android:paddingBottom="@dimen/spacing_mlarge">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17.8 K"
+                        android:textAppearance="@style/os_bold"
+                        android:textColor="@color/greyishBrown"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="Followers"
+                        android:textAppearance="@style/os_semibold"
+                        android:textColor="@color/greyishBrown"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.3 K"
+                        android:textAppearance="@style/os_bold"
+                        android:textColor="@color/greyishBrown"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="Following"
+                        android:textAppearance="@style/os_semibold"
+                        android:textColor="@color/greyishBrown"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyishBrown" />
+
+
+            <TextView
+                android:id="@+id/all_post_tv"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:text="All Post"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/greyishBrown"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:visibility="visible"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+                <LinearLayout
+                    android:id="@+id/coca_2_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mar_10"
+                        android:orientation="horizontal">
+
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/user_iv"
+                            android:layout_width="@dimen/spacing_xxlarge"
+                            android:layout_height="@dimen/spacing_xxlarge"
+                            android:src="@drawable/photo_female_3"
+                            app:civ_border="false"
+                            app:civ_shadow="true"
+                            app:civ_shadow_radius="0" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mar_15"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/username_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center_vertical"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textAppearance="@style/os_semibold"
+                                android:textColor="@color/title_text_color"
+                                android:textSize="@dimen/textSize16sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/location_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAppearance="@style/os_regular"
+                                    android:textColor="@color/Black"
+                                    android:textSize="@dimen/textSize12sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="@dimen/mar_10"
+                        android:background="@color/cornflowerBlue2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/title_tv"
+                            style="@style/avenir_book"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:paddingLeft="@dimen/mar_10"
+                            android:paddingRight="@dimen/mar_10"
+                            android:text=""
+                            android:textColor="@color/Black"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mar_10"
+                            android:background="@drawable/minor_corner_with_bg"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/mar_15">
+
+                            <ImageView
+                                android:id="@+id/feed_iv"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/mar_150"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:background="@color/LightGrey"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/content_tv"
+                                style="@style/avenir_heavy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/mar_10"
+                                android:ellipsize="end"
+                                android:maxLines="3"
+                                android:paddingLeft="@dimen/mar_10"
+                                android:paddingRight="@dimen/mar_10"
+                                android:text="Observing the future through an AR lens" />
+
+                            <TextView
+                                style="@style/avenir_heavy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/mar_5"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingRight="@dimen/_10sdp"
+                                android:text="• 3-4 Min Read"
+                                android:textColor="@color/lightBlueGrey" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@color/cornflowerBlue2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/ic_like" />
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/mar_25"
+                                    app:srcCompat="@drawable/ic_comment" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_large" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
